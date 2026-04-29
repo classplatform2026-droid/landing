@@ -755,7 +755,7 @@
       .product-item {
         display: grid;
         grid-template-columns: auto 1fr auto;
-        gap: 1rem;
+        gap: .5rem;
         align-items: center;
         padding: 1rem;
         border-radius: 20px;
@@ -784,11 +784,18 @@
       }
 
       .product-preview img {
-        width: 64px;
-        height: 64px;
-        border-radius: 18px;
-        object-fit: cover;
-      }
+  width: 64px;
+  height: 64px;
+  border-radius: 18px;
+  object-fit: cover;
+}
+
+@media (max-width: 600px) {
+  .product-preview img {
+    width: 48px;
+    height: 48px;
+  }
+}
 
       .product-meta {
         display: grid;
