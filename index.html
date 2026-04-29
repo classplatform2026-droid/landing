@@ -1,0 +1,1783 @@
+<!doctype html>
+<html lang="bn">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Buy Different | Premium Rain Protection</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+      :root {
+        --bg: #07080b;
+        --surface: rgba(255, 255, 255, 0.06);
+        --surface-strong: rgba(255, 255, 255, 0.12);
+        --accent: #00a896;
+        --accent-strong: #33d6b3;
+        --text: #f7f7f7;
+        --muted: #b8bac0;
+        --shadow: 0 28px 60px rgba(0, 0, 0, 0.32);
+        scroll-behavior: smooth;
+      }
+
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: "Poppins", sans-serif;
+      }
+
+      body {
+        background:
+          radial-gradient(
+            circle at top left,
+            rgba(0, 168, 150, 0.14),
+            transparent 25%
+          ),
+          linear-gradient(180deg, #090a0e 0%, #060708 100%);
+        color: var(--text);
+        min-height: 100vh;
+        line-height: 1.6;
+      }
+
+      img {
+        max-width: 100%;
+        display: block;
+      }
+
+      .page {
+        width: min(1200px, calc(100% - 1.5rem));
+        margin: 0 auto;
+      }
+
+      header {
+        position: sticky;
+        top: 0;
+        z-index: 50;
+        backdrop-filter: blur(18px);
+        background: rgba(7, 8, 11, 0.82);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      }
+
+      .nav-row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+        padding: 1rem 0;
+      }
+
+      .brand {
+        font-size: 1.05rem;
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+        font-weight: 700;
+      }
+
+      .brand span {
+        color: var(--accent);
+      }
+
+      .nav-links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        font-size: 0.95rem;
+        color: var(--muted);
+      }
+
+      .nav-links a {
+        color: inherit;
+        text-decoration: none;
+        transition: color 0.25s ease;
+      }
+
+      .nav-links a:hover {
+        color: var(--text);
+      }
+
+      .hero {
+        padding: 5rem 0 3rem;
+        display: grid;
+        grid-template-columns: 1.08fr 0.92fr;
+        align-items: center;
+        gap: 2.5rem;
+      }
+
+      .hero-copy {
+        max-width: 32rem;
+        animation: fadeIn 1s ease forwards;
+      }
+
+      .eyebrow {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        text-transform: uppercase;
+        color: var(--accent);
+        letter-spacing: 0.2em;
+        font-size: 0.78rem;
+        margin-bottom: 1rem;
+      }
+
+      .eyebrow::before {
+        content: "";
+        width: 32px;
+        height: 1px;
+        background: var(--accent);
+        opacity: 0.75;
+      }
+
+      .hero h1 {
+        font-size: clamp(2.7rem, 5vw, 4.5rem);
+        line-height: 0.95;
+        letter-spacing: -0.05em;
+        margin-bottom: 1rem;
+      }
+
+      .hero p {
+        color: var(--muted);
+        font-size: 1.05rem;
+        margin-bottom: 2rem;
+        max-width: 34rem;
+      }
+
+      .hero-actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        align-items: center;
+      }
+
+      .btn-primary,
+      .btn-secondary {
+        padding: 1rem 1.9rem;
+        border-radius: 999px;
+        border: none;
+        text-decoration: none;
+        cursor: pointer;
+        font-weight: 600;
+        transition:
+          transform 0.25s ease,
+          background 0.25s ease,
+          box-shadow 0.25s ease;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+      }
+
+      .btn-primary {
+        background: linear-gradient(
+          135deg,
+          var(--accent),
+          var(--accent-strong)
+        );
+        color: #061313;
+        box-shadow: 0 18px 40px rgba(0, 168, 150, 0.26);
+      }
+
+      .btn-secondary {
+        background: rgba(255, 255, 255, 0.06);
+        color: var(--text);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+      }
+
+      .btn-primary:hover,
+      .btn-secondary:hover {
+        transform: translateY(-2px);
+      }
+
+      .hero-visual {
+        position: relative;
+        display: grid;
+        place-items: center;
+        min-height: 480px;
+        background:
+          linear-gradient(180deg, rgba(255, 255, 255, 0.04), transparent 60%),
+          radial-gradient(
+            circle at top right,
+            rgba(0, 168, 150, 0.22),
+            transparent 18%
+          );
+        border: 1px solid rgba(255, 255, 255, 12%);
+        border-radius: 32px;
+        box-shadow: var(--shadow);
+        overflow: hidden;
+        padding: 2rem;
+      }
+
+      .hero-visual::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        pointer-events: none;
+        background:
+          radial-gradient(
+            circle at 20% 20%,
+            rgba(255, 255, 255, 0.06),
+            transparent 18%
+          ),
+          linear-gradient(
+            135deg,
+            transparent 0%,
+            rgba(255, 255, 255, 0.04) 100%
+          );
+      }
+
+      .hero-card {
+        position: relative;
+        width: 100%;
+        max-width: 420px;
+        border-radius: 32px;
+        overflow: hidden;
+        background: rgba(2, 5, 10, 0.63);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        box-shadow: 0 28px 80px rgba(0, 0, 0, 0.35);
+      }
+
+      .hero-card img {
+        width: 100%;
+        display: block;
+        filter: saturate(1.1) contrast(1.05);
+        transform: translateY(-8px);
+      }
+
+      .hero-card-content {
+        padding: 1.5rem 1.5rem 2rem;
+      }
+
+      .hero-card-content h2 {
+        font-size: 1.4rem;
+        margin-bottom: 0.8rem;
+      }
+
+      .hero-card-content p {
+        color: var(--muted);
+        font-size: 0.98rem;
+        margin-bottom: 1rem;
+      }
+
+      .hero-card-badge {
+        display: inline-flex;
+        gap: 0.5rem;
+        align-items: center;
+        padding: 0.7rem 1rem;
+        border-radius: 999px;
+        background: rgba(255, 255, 255, 0.06);
+        font-size: 0.85rem;
+        color: var(--text);
+        border: 1px solid rgba(255, 255, 255, 0.07);
+      }
+
+      section {
+        padding: 3rem 0;
+      }
+
+      .section-head {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+        flex-wrap: wrap;
+        margin-bottom: 2rem;
+      }
+
+      .section-head h2 {
+        font-size: 2rem;
+        margin-bottom: 0.25rem;
+      }
+
+      .section-head p {
+        color: var(--muted);
+        max-width: 680px;
+      }
+
+      .grid-3 {
+        display: grid;
+        gap: 1.5rem;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+
+      .product-card,
+      .feature-card,
+      .testimonial-card,
+      .contact-card {
+        background: var(--surface);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 24px;
+        padding: 1.75rem;
+        box-shadow: 0 20px 45px rgba(0, 0, 0, 0.22);
+        transition:
+          transform 0.25s ease,
+          border-color 0.25s ease,
+          box-shadow 0.25s ease;
+        backdrop-filter: blur(16px);
+      }
+
+      .product-card:hover,
+      .feature-card:hover,
+      .testimonial-card:hover,
+      .contact-card:hover {
+        transform: translateY(-6px);
+        border-color: rgba(0, 168, 150, 0.33);
+        box-shadow: 0 28px 60px rgba(0, 168, 150, 0.18);
+      }
+
+      .contact-card {
+        max-width: 760px;
+        margin: 0 auto;
+        display: grid;
+        gap: 0.85rem;
+      }
+
+      .contact-card p {
+        font-size: 1rem;
+        line-height: 1.75;
+        color: var(--text);
+      }
+
+      .contact-card strong {
+        display: inline-block;
+        min-width: 170px;
+        color: var(--primary);
+      }
+
+      .contact-card a {
+        color: var(--text);
+        text-decoration: none;
+      }
+
+      .contact-card a:hover {
+        text-decoration: underline;
+      }
+
+      .product-card img {
+        border-radius: 22px;
+        margin-bottom: 1.25rem;
+        min-height: 220px;
+        object-fit: cover;
+        width: 100%;
+        aspect-ratio: 4 / 3;
+        background: linear-gradient(
+          135deg,
+          rgba(0, 168, 150, 0.12),
+          rgba(255, 255, 255, 0.05)
+        );
+      }
+
+      .product-card h3 {
+        margin-bottom: 0.9rem;
+        font-size: 1.2rem;
+      }
+
+      .product-card p {
+        color: var(--muted);
+        margin-bottom: 1rem;
+      }
+
+      .price-block {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 0.75rem;
+        margin-top: 0.75rem;
+      }
+
+      .price-block div {
+        display: flex;
+        align-items: center;
+        gap: 0.8rem;
+        flex-wrap: wrap;
+      }
+
+      .old-price {
+        color: rgba(255, 255, 255, 0.55);
+        text-decoration: line-through;
+        font-size: 0.95rem;
+      }
+
+      .new-price {
+        color: var(--accent-strong);
+        font-weight: 700;
+        font-size: 1.05rem;
+      }
+
+      .discount-badge {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0.45rem 0.85rem;
+        border-radius: 999px;
+        background: rgba(51, 214, 179, 0.16);
+        color: var(--accent-strong);
+        font-size: 0.8rem;
+        font-weight: 700;
+      }
+
+      .color-list {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        margin-top: 0.75rem;
+        color: var(--muted);
+        font-size: 0.9rem;
+      }
+
+      .color-swatch {
+        width: 14px;
+        height: 14px;
+        border-radius: 50%;
+        border: 1px solid rgba(255, 255, 255, 0.18);
+      }
+
+      .color-swatch.black {
+        background: #111;
+      }
+
+      .color-swatch.navy {
+        background: #1f3b66;
+      }
+
+      .color-swatch.red {
+        background: #d64545;
+      }
+
+      .color-swatch.green {
+        background: #38b000;
+      }
+
+      .color-wrap {
+        display: grid;
+        gap: 0.5rem;
+        margin-top: 0.85rem;
+      }
+
+      .color-wrap label {
+        color: rgba(255, 255, 255, 0.8);
+        font-size: 0.95rem;
+        font-weight: 500;
+      }
+
+      .color-select {
+        width: 100%;
+        min-width: 210px;
+        padding: 0.95rem 1rem;
+        border-radius: 18px;
+        border: 1px solid rgba(255, 255, 255, 0.16);
+        background: rgba(255, 255, 255, 0.06);
+        color: #f7f7f7;
+        font-size: 1rem;
+        outline: none;
+        appearance: none;
+        background-image: linear-gradient(45deg, transparent 50%, rgba(255,255,255,0.35) 50%), linear-gradient(135deg, rgba(255,255,255,0.35) 50%, transparent 50%);
+        background-position: calc(100% - 1rem) center, calc(100% - 0.7rem) center;
+        background-size: 8px 8px, 8px 8px;
+        background-repeat: no-repeat;
+      }
+
+      .color-select:focus {
+        border-color: rgba(0, 168, 150, 0.45);
+        box-shadow: 0 0 0 5px rgba(0, 168, 150, 0.08);
+      }
+
+      .color-select option {
+        color: #111;
+        background: #f7f7f7;
+      }
+
+      .color-select::-ms-expand {
+        display: none;
+      }
+
+      .feature-card {
+        display: flex;
+        align-items: flex-start;
+        gap: 1rem;
+      }
+
+      .feature-card .icon {
+        min-width: 3rem;
+        min-height: 3rem;
+        display: grid;
+        place-items: center;
+        border-radius: 18px;
+        background: rgba(255, 255, 255, 0.08);
+        font-size: 1.4rem;
+        color: var(--accent);
+      }
+
+      .feature-card h3 {
+        font-size: 1.1rem;
+        margin-bottom: 0.5rem;
+      }
+
+      .feature-card p {
+        color: var(--muted);
+        font-size: 0.95rem;
+      }
+
+      .offer-card {
+        position: relative;
+        display: grid;
+        grid-template-columns: 1.2fr 0.8fr;
+        gap: 2rem;
+        align-items: center;
+        background: radial-gradient(circle at top left, rgba(0, 220, 178, 0.16), transparent 28%),
+          radial-gradient(circle at bottom right, rgba(42, 116, 255, 0.14), transparent 26%),
+          linear-gradient(135deg, #0f1c2a, #102a3f);
+        border: 1px solid rgba(0, 212, 174, 0.14);
+        padding: 2rem;
+        border-radius: 32px;
+        overflow: hidden;
+        box-shadow: 0 32px 80px rgba(0, 0, 0, 0.18);
+      }
+
+      .offer-card::before,
+      .offer-card::after {
+        content: "";
+        position: absolute;
+        border-radius: 50%;
+        filter: blur(20px);
+        opacity: 0.55;
+      }
+
+      .offer-card::before {
+        width: 220px;
+        height: 220px;
+        top: -40px;
+        left: -40px;
+        background: rgba(0, 217, 184, 0.24);
+      }
+
+      .offer-card::after {
+        width: 260px;
+        height: 260px;
+        bottom: -60px;
+        right: -60px;
+        background: rgba(55, 162, 255, 0.18);
+      }
+
+      .offer-card h3 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+        color: #e8f9ff;
+        text-shadow: 0 4px 14px rgba(0, 0, 0, 0.18);
+      }
+
+      .offer-card p {
+        max-width: 30rem;
+        color: rgba(255, 255, 255, 0.72);
+        margin-bottom: 1.5rem;
+      }
+
+      .offer-only-coupon {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        min-height: 220px;
+        padding: 2rem;
+      }
+
+      .offer-coupon-banner {
+        display: inline-grid;
+        gap: 0.65rem;
+        text-align: center;
+        padding: 1.8rem 2.4rem;
+        border-radius: 34px;
+        background: rgba(14, 31, 57, 0.92);
+        border: 1px solid rgba(57, 236, 178, 0.4);
+        box-shadow: 0 14px 40px rgba(0, 211, 171, 0.15);
+        backdrop-filter: blur(8px);
+      }
+
+      .offer-tag {
+        color: #a6fff6;
+        text-transform: uppercase;
+        letter-spacing: 0.24em;
+        font-size: 0.85rem;
+        font-weight: 700;
+      }
+
+      .offer-code {
+        font-size: 3.4rem;
+        color: #f1fbff;
+        letter-spacing: 0.32rem;
+        text-shadow: 0 8px 24px rgba(22, 255, 198, 0.14);
+      }
+
+      .offer-discount {
+        color: #c7f4f0;
+        font-size: 1.15rem;
+        font-weight: 700;
+      }
+
+      .offer-subtitle {
+        margin: 0;
+        color: rgba(255, 255, 255, 0.72);
+        font-size: 0.95rem;
+      }
+
+      .percent {
+        font-size: 2rem;
+        color: var(--accent-strong);
+        font-weight: 700;
+      }
+
+      .testimonial-card {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+      }
+
+      .testimonial-card .stars {
+        display: inline-flex;
+        gap: 0.15rem;
+        color: #ffca28;
+        font-size: 0.95rem;
+      }
+
+      .testimonial-card p {
+        color: var(--muted);
+      }
+
+      .testimonial-card h4 {
+        font-size: 1rem;
+        color: var(--text);
+      }
+
+      .testimonial-card span {
+        color: var(--muted);
+        font-size: 0.92rem;
+      }
+
+      .order-grid {
+        display: grid;
+        gap: 2rem;
+        grid-template-columns: 1fr;
+      }
+
+      .order-panel,
+      .summary-card {
+        background: var(--surface);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 28px;
+        padding: 2rem;
+        box-shadow: 0 20px 45px rgba(0, 0, 0, 0.18);
+        backdrop-filter: blur(16px);
+      }
+
+      .order-panel h3,
+      .summary-card h3 {
+        font-size: 1.3rem;
+        margin-bottom: 1rem;
+      }
+
+      .panel-section {
+        display: grid;
+        gap: 1rem;
+        margin-bottom: 1.5rem;
+      }
+
+      .field-row {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 1rem;
+      }
+
+      .field-group {
+        display: grid;
+        gap: 0.55rem;
+      }
+
+      .field-group label {
+        color: var(--muted);
+        font-size: 0.95rem;
+      }
+
+      .field-group input,
+      .field-group textarea {
+        width: 100%;
+        padding: 1rem 1rem;
+        border-radius: 18px;
+        border: 1px solid rgba(255, 255, 255, 0.12);
+        background: rgba(255, 255, 255, 0.04);
+        color: var(--text);
+        font-size: 1rem;
+        outline: none;
+      }
+
+      .field-group textarea {
+        min-height: 110px;
+        resize: vertical;
+      }
+
+      .radio-group {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 0.85rem;
+      }
+
+      .radio-item {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        padding: 1rem 1rem;
+        border-radius: 18px;
+        background: rgba(255, 255, 255, 0.06);
+        border: 1px solid rgba(255, 255, 255, 0.12);
+        cursor: pointer;
+        transition: border-color 0.2s ease, background-color 0.2s ease, transform 0.2s ease;
+      }
+
+      .radio-item:hover {
+        border-color: rgba(0, 168, 150, 0.25);
+        background: rgba(0, 168, 150, 0.08);
+        transform: translateY(-1px);
+      }
+
+      .radio-item input {
+        accent-color: var(--accent);
+        width: 1.15rem;
+        height: 1.15rem;
+      }
+
+      .product-list {
+        display: grid;
+        gap: 1rem;
+      }
+
+      .product-item {
+        display: grid;
+        grid-template-columns: auto 1fr auto;
+        gap: 1rem;
+        align-items: center;
+        padding: 1rem;
+        border-radius: 20px;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        background: rgba(255, 255, 255, 0.04);
+      }
+
+      .product-checkbox {
+        display: flex;
+        align-items: center;
+        gap: 0.85rem;
+        cursor: pointer;
+      }
+
+      .product-checkbox input {
+        accent-color: var(--accent);
+        width: 1.2rem;
+        height: 1.2rem;
+      }
+
+      .product-preview {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        gap: 0.85rem;
+        align-items: center;
+      }
+
+      .product-preview img {
+        width: 64px;
+        height: 64px;
+        border-radius: 18px;
+        object-fit: cover;
+      }
+
+      .product-meta {
+        display: grid;
+        gap: 0.25rem;
+      }
+
+      .product-meta strong {
+        font-size: 1rem;
+      }
+
+      .product-meta small {
+        color: var(--muted);
+        font-size: 0.9rem;
+      }
+
+      .product-price {
+        color: var(--accent-strong);
+        font-weight: 700;
+      }
+
+      .quantity-control {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        border-radius: 14px;
+        border: 1px solid rgba(255, 255, 255, 0.12);
+        background: rgba(255, 255, 255, 0.06);
+        padding: 0.35rem 0.5rem;
+      }
+
+      .qty-btn {
+        width: 34px;
+        height: 34px;
+        border-radius: 12px;
+        border: none;
+        background: rgba(255, 255, 255, 0.08);
+        color: var(--text);
+        font-size: 1.1rem;
+        cursor: pointer;
+        transition: background 0.2s ease;
+      }
+
+      .qty-btn:hover {
+        background: rgba(0, 168, 150, 0.15);
+      }
+
+      .qty-value {
+        min-width: 28px;
+        text-align: center;
+        font-weight: 600;
+      }
+
+      .coupon-row {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        gap: 1rem;
+        align-items: center;
+      }
+
+      .coupon-row input {
+        padding: 1rem 1.1rem;
+        border-radius: 16px;
+        border: 1px solid rgba(255, 255, 255, 0.16);
+        background: rgba(255, 255, 255, 0.06);
+      }
+
+      .coupon-row button {
+        padding: 1rem 1.4rem;
+        border-radius: 16px;
+      }
+
+      .coupon-section {
+        background: rgba(0, 168, 150, 0.08);
+        border: 1px solid rgba(0, 168, 150, 0.18);
+        border-radius: 24px;
+        padding: 1.5rem;
+      }
+
+      .coupon-help {
+        color: var(--muted);
+        font-size: 0.9rem;
+      }
+
+      .place-order {
+        margin-top: 1rem;
+      }
+
+      .summary-card {
+        display: grid;
+        gap: 1.25rem;
+      }
+
+      .summary-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1rem;
+        color: var(--muted);
+      }
+
+      .summary-row.total {
+        color: var(--text);
+        font-size: 1.05rem;
+      }
+
+      .summary-row.total strong {
+        font-size: 1.1rem;
+      }
+
+      .summary-note {
+        color: var(--muted);
+        font-size: 0.95rem;
+      }
+
+      .confirmation {
+        display: none;
+        gap: 1rem;
+        align-items: center;
+        background: rgba(51, 214, 179, 0.1);
+        border: 1px solid rgba(51, 214, 179, 0.25);
+        color: #33d6b3;
+        padding: 1rem 1rem;
+        border-radius: 20px;
+      }
+
+      .confirmation i {
+        font-size: 1.4rem;
+      }
+
+      .footer-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 1.5rem;
+        align-items: start;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding-top: 1.5rem;
+      }
+
+      .footer-grid p {
+        margin-bottom: 0.75rem;
+        color: var(--muted);
+      }
+
+      .footer-grid strong {
+        color: var(--accent);
+      }
+
+      .footer-grid a {
+        color: inherit;
+        text-decoration: none;
+      }
+
+      .footer-grid a:hover {
+        color: var(--text);
+      }
+
+      .footer-copy {
+        margin: 1.75rem auto 0;
+        max-width: 760px;
+        line-height: 1.8;
+        color: var(--muted);
+        font-size: 0.95rem;
+        display: inline-grid;
+        gap: 0.35rem;
+        justify-items: center;
+      }
+
+      .footer-copy a {
+        color: var(--accent-strong);
+        text-decoration: none;
+      }
+
+      .footer-copy a:hover {
+        text-decoration: underline;
+      }
+
+      .footer-copy strong {
+        color: var(--text);
+      }
+
+      .whatsapp-float {
+        position: fixed;
+        right: 1.4rem;
+        bottom: 1.4rem;
+        z-index: 100;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 62px;
+        height: 62px;
+        font-size: 2.2rem;
+        border-radius: 50%;
+        border: 1px solid rgba(255, 255, 255, 0.12);
+        background: linear-gradient(135deg, #25d366, #00a896);
+        color: #fff;
+        box-shadow: 0 24px 50px rgba(0, 0, 0, 0.3);
+        transition:
+          transform 0.25s ease,
+          box-shadow 0.25s ease;
+        text-decoration: none;
+      }
+
+      .whatsapp-float:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 30px 65px rgba(0, 0, 0, 0.35);
+      }
+
+      .footer {
+        padding: 2.5rem 0 4rem;
+        text-align: center;
+        color: var(--muted);
+        font-size: 0.95rem;
+      }
+
+      @media (max-width: 980px) {
+        .hero {
+          grid-template-columns: 1fr;
+        }
+
+        .offer-card,
+        .order-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .order-grid {
+          gap: 1.5rem;
+        }
+
+        .grid-3 {
+          grid-template-columns: 1fr 1fr;
+        }
+      }
+
+      @media (max-width: 720px) {
+        .nav-row {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+
+        .hero {
+          padding-top: 3rem;
+        }
+
+        .section-head {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+
+        .grid-3,
+        .order-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .field-row,
+        .coupon-row {
+          grid-template-columns: 1fr;
+        }
+
+        .hero-visual {
+          min-height: 360px;
+        }
+
+        .hero-card {
+          max-width: 100%;
+        }
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="page nav-row">
+        <div class="brand">Buy <span>Different</span></div>
+        <nav class="nav-links">
+          <a href="#products">প্রোডাক্ট</a>
+          <a href="#features">সুবিধা</a>
+          <a href="#offer">অফার</a>
+          <a href="#order">অর্ডার</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="page">
+      <section class="hero">
+        <div class="hero-copy">
+          <span class="eyebrow">Stay Dry. Look Stylish.</span>
+          <h1>Premium Rain Protection Collection</h1>
+          <p>
+            Buy Different এর স্টাইলিশ ও টেকসই রেইনওয়্যার দিয়ে বৃষ্টি দিনকে করে
+            তুলুন প্রিমিয়াম এবং আরামদায়ক।
+          </p>
+          <div class="hero-actions">
+            <a href="#order" class="btn-primary"><i class="fa-solid fa-bag-shopping"></i> অর্ডার করুন</a>
+            <a href="#testimonials" class="btn-secondary"><i class="fa-solid fa-comments"></i> পরামর্শ দেখুন</a>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <article class="hero-card">
+            <img src="https://res.cloudinary.com/dhptequpx/image/upload/v1777445685/chat_images/file_1777445684733_boww0b6e6.png" alt="Premium BMW style umbrella" />
+            <div class="hero-card-content">
+              <h2>BMW স্টাইলের ছাতা</h2>
+              <p>বাতাস-প্রতিরোধী, লাক্সারি ফিনিস, দিনে দিনে প্রিমিয়াম লুক।</p>
+              <span class="hero-card-badge"><i class="fa-solid fa-shield-alt"></i> Windproof Luxury</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="products">
+        <div class="section-head">
+          <div>
+            <h2><i class="fa-solid fa-box-open"></i> প্রোডাক্ট কালেকশন</h2>
+            <p>
+              আমাদের বিশেষ সংগ্রহে রয়েছে ছাতা, কিডস রেইনকোট ও মেনস জ্যাকেট —
+              সবই জলরোধী ও উচ্চমানের।
+            </p>
+          </div>
+        </div>
+
+        <div class="grid-3">
+          <article class="product-card">
+            <img src="https://res.cloudinary.com/dhptequpx/image/upload/v1777445896/chat_images/file_1777445895945_ognvyvj4c.png" alt="Premium BMW style umbrella" />
+            <h3>Premium BMW-style umbrella</h3>
+            <p>
+              স্টাইল, শক্তি এবং আরামের perfect সমন্বয়। কঠিন বাতাসেও নিরাপদ।
+            </p>
+            <div class="color-list">
+              <span class="color-swatch black"></span>
+              <span>কালো</span>
+              <span class="color-swatch navy"></span>
+              <span>নেভি ব্লু</span>
+              <span class="color-swatch red"></span>
+              <span>লাল</span>
+              <span class="color-swatch green"></span>
+              <span>সবুজ</span>
+            </div>
+            <div class="price-block">
+              <div>
+                <span class="old-price">1700৳</span>
+                <span class="new-price">1400৳</span>
+              </div>
+              <span class="discount-badge">18% OFF</span>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <img src="https://res.cloudinary.com/dhptequpx/image/upload/v1777445720/chat_images/file_1777445719374_l56a5isqk.png" alt="Kids waterproof raincoat" />
+            <h3>Kids waterproof raincoat</h3>
+            <p>
+              কার্টুন প্রিন্ট, স্কুল-ফ্রেন্ডলি, সম্পূর্ণ জলরোধী। শিশুর জন্য
+              আদর্শ।
+            </p>
+            <div class="color-list">
+              <span class="color-swatch navy"></span>
+              <span>নেভি ব্লু</span>
+            </div>
+            <div class="price-block">
+              <div>
+                <span class="old-price">2700৳</span>
+                <span class="new-price">2300৳</span>
+              </div>
+              <span class="discount-badge">15% OFF</span>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <img src="https://res.cloudinary.com/dhptequpx/image/upload/v1777445699/chat_images/file_1777445698351_cdpo7sn97.png" alt="Men's waterproof rain jacket" />
+            <h3>Men's waterproof rain jacket</h3>
+            <p>
+              উড়ন্ত শহর ও বাইকারের জন্য urban স্টাইল, স্বাচ্ছন্দ্য ও আড়ম্বর।
+            </p>
+            <div class="color-list">
+              <span class="color-swatch black"></span>
+              <span>কালো</span>
+              <span class="color-swatch navy"></span>
+              <span>নেভি ব্লু</span>
+            </div>
+            <div class="price-block">
+              <div>
+                <span class="old-price">3900৳</span>
+                <span class="new-price">3200৳</span>
+              </div>
+              <span class="discount-badge">18% OFF</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="features">
+        <div class="section-head">
+          <h2><i class="fa-solid fa-star"></i> বিশেষ সুবিধা</h2>
+          <p>
+            আমাদের প্রোডাক্টে আছে গ্যারান্টি, ডেলিভারি সুবিধা, এবং প্রিমিয়াম
+            মানের নিশ্চয়তা।
+          </p>
+        </div>
+
+        <div class="grid-3">
+          <article class="feature-card">
+            <span class="icon"><i class="fa-solid fa-water"></i></span>
+            <div>
+              <h3>Waterproof Guarantee</h3>
+              <p>
+                শুরু থেকে শেষ পর্যন্ত ১০০% জলরোধী সুরক্ষা ও নির্ভরযোগ্য নির্মাণ।
+              </p>
+            </div>
+          </article>
+
+          <article class="feature-card">
+            <span class="icon"><i class="fa-solid fa-shipping-fast"></i></span>
+            <div>
+              <h3>Fast Delivery</h3>
+              <p>দ্রুত ডেলিভারি নিশ্চিত, যাতে আপনার অর্ডার সময়মত পৌঁছায়।</p>
+            </div>
+          </article>
+
+          <article class="feature-card">
+            <span class="icon"><i class="fa-solid fa-money-bill-wave"></i></span>
+            <div>
+              <h3>Cash on Delivery</h3>
+              <p>
+                আশ্বাসময় ক্যাশ অন ডেলিভারি পেমেন্ট সুবিধা আপনার সুবিধার্থে।
+              </p>
+            </div>
+          </article>
+
+        </div>
+      </section>
+
+      <section id="offer">
+        <div class="offer-card">
+          <div>
+            <h3><i class="fa-solid fa-bolt"></i>  Time Offer</h3>
+            <p>
+              এই স্পেশাল ডিসকাউন্ট এখনই চালু! আপনার প্রিয় রেইনওয়্যার দ্রুত
+              অর্ডার করুন এবং বৃষ্টির মরসুমে ফ্যাশন ও সুরক্ষার সেরা সমন্বয় পান।
+            </p>
+            <div class="offer-only-coupon">
+              <div class="offer-coupon-banner">
+                <span class="offer-tag">Coupon</span>
+                <strong class="offer-code">RAIN5</strong>
+                <span class="offer-discount">5% OFF</span>
+                <p class="offer-subtitle">
+                  বৃষ্টির মরসুমে সেলিব্রেট করুন স্টাইল ও সাশ্রয়ের সাথে।
+                </p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <img
+              src="https://res.cloudinary.com/dhptequpx/image/upload/v1777445983/chat_images/file_1777445983148_fmyhyhvfx.png"
+              alt="Limited offer product"
+              style="border-radius: 28px; width: 100%"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section id="testimonials">
+        <div class="section-head">
+          <div>
+            <h2><i class="fa-solid fa-comments"></i> গ্রাহক রিভিউ</h2>
+            <p>
+              নিচের প্রেমময় মন্তব্যগুলো আমাদের প্রোডাক্টের বিশ্বাসযোগ্যতা ও
+              মানের প্রমাণ।
+            </p>
+          </div>
+        </div>
+
+        <div class="grid-3">
+          <article class="testimonial-card">
+            <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+            <p>
+              "আমি ছাতার ডিজাইন এবং গুণমান পছন্দ করি। ঝড়েও একেবারে নিরাপদ।"
+            </p>
+            <h4>শরিফ, ঢাকা</h4>
+            <span>Premium BMW-style umbrella গ্রাহক</span>
+          </article>
+
+          <article class="testimonial-card">
+            <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+            <p>"খেলাধুলার জন্য পারফেক্ট রেইনকোট। আমাদের ছোট ভাই খুব খুশি।"</p>
+            <h4>রিমা, গুলশান</h4>
+            <span>Kids waterproof raincoat গ্রাহক</span>
+          </article>
+
+          <article class="testimonial-card">
+            <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+            <p>
+              "জ্যাকেটের ফিট ও স্টাইল সত্যিই দুর্দান্ত, শহরে আমাকে আরও স্মার্ট
+              দেখায়।"
+            </p>
+            <h4>আতিক, বসুন্ধরা</h4>
+            <span>Men's waterproof rain jacket গ্রাহক</span>
+          </article>
+        </div>
+      </section>
+
+      <section id="order">
+        <div class="section-head">
+          <div>
+            <h2><i class="fa-solid fa-shopping-cart"></i> অর্ডার ফর্ম</h2>
+            <p>
+              সহজ, দ্রুত এবং পরিষ্কার প্রোডাক্ট অর্ডার ফর্ম। নিচে তথ্য দেখুন,
+              পছন্দের পণ্য নির্বাচন করুন, এবং এক ক্লিকে অর্ডার সম্পন্ন করুন।
+            </p>
+          </div>
+        </div>
+
+        <div class="order-grid">
+          <form id="orderForm" class="order-panel" novalidate>
+            <div class="panel-section">
+              <h3>১. কাস্টমার ইনফরমেশন</h3>
+              <div class="field-row">
+                <div class="field-group">
+                  <label for="customerName">নাম (Full Name)</label>
+                  <input
+                    type="text"
+                    id="customerName"
+                    placeholder="আপনার নাম লিখুন"
+                    required
+                  />
+                </div>
+                <div class="field-group">
+                  <label for="customerPhone">ফোন নাম্বার (Required)</label>
+                  <input
+                    type="tel"
+                    id="customerPhone"
+                    placeholder="০১৯xxxxxxxx"
+                    required
+                    pattern="[0-9]{11}"
+                  />
+                </div>
+              </div>
+              <div class="field-group">
+                <label for="customerAddress">সম্পূর্ণ ঠিকানা</label>
+                <textarea
+                  id="customerAddress"
+                  placeholder="আপনার সম্পূর্ণ ঠিকানা লিখুন"
+                  required
+                ></textarea>
+              </div>
+              <div class="field-group">
+                <label for="customerNote">অতিরিক্ত নোট (Optional)</label>
+                <textarea
+                  id="customerNote"
+                  placeholder=" বিশেষ নির্দেশনা বা নোট লিখুন"
+                ></textarea>
+              </div>
+            </div>
+
+            <div class="panel-section">
+              <h3>২. শিপিং অপশন</h3>
+              <div class="radio-group">
+                <label class="radio-item">
+                  <input
+                    type="radio"
+                    name="shipping"
+                    value="70"
+                    checked
+                  />
+                  <span>ঢাকার ভিতরে — ৭০৳</span>
+                </label>
+                <label class="radio-item">
+                  <input type="radio" name="shipping" value="130" />
+                  <span>ঢাকার বাইরে — ১৩০৳</span>
+                </label>
+              </div>
+            </div>
+
+            <div class="panel-section">
+              <h3>৩. প্রোডাক্ট সেকশন</h3>
+              <div class="product-list">
+                <div class="product-item" data-id="umbrella" data-price="1400">
+                  <label class="product-checkbox">
+                    <input
+                      type="checkbox"
+                      class="product-select"
+                      checked
+                    />
+                    <div class="product-preview">
+                      <img
+                        src="https://res.cloudinary.com/dhptequpx/image/upload/v1777445896/chat_images/file_1777445895945_ognvyvj4c.png"
+                        alt="Premium umbrella"
+                      />
+                      <div class="product-meta">
+                        <strong>Premium BMW-style umbrella</strong>
+                        <div class="color-wrap">
+                        <select id="umbrellaColor" class="color-select">
+                          <option value="black">কালো</option>
+                          <option value="navy">নেভি ব্লু</option>
+                          <option value="red">লাল</option>
+                          <option value="green">সবুজ</option>
+                        </select>
+                      </div>
+                      </div>
+                    </div>
+                  </label>
+                  <div class="product-price">1400৳</div>
+                  <div class="quantity-control">
+                    <button
+                      type="button"
+                      class="qty-btn"
+                      data-action="decrease"
+                      data-product="umbrella"
+                    >-</button>
+                    <span class="qty-value">1</span>
+                    <button
+                      type="button"
+                      class="qty-btn"
+                      data-action="increase"
+                      data-product="umbrella"
+                    >+</button>
+                  </div>
+                </div>
+
+                <div class="product-item" data-id="raincoat" data-price="2300">
+                  <label class="product-checkbox">
+                    <input type="checkbox" class="product-select" checked />
+                    <div class="product-preview">
+                      <img
+                        src="https://res.cloudinary.com/dhptequpx/image/upload/v1777445720/chat_images/file_1777445719374_l56a5isqk.png"
+                        alt="Kids waterproof raincoat"
+                      />
+                      <div class="product-meta">
+                        <strong>Kids waterproof raincoat</strong>
+                        <div class="color-wrap">
+                        <select id="raincoatColor" class="color-select">
+                          <option value="navy">নেভি ব্লু</option>
+                        </select>
+                      </div>
+                      </div>
+                    </div>
+                  </label>
+                  <div class="product-price">2300৳</div>
+                  <div class="quantity-control">
+                    <button
+                      type="button"
+                      class="qty-btn"
+                      data-action="decrease"
+                      data-product="raincoat"
+                    >-</button>
+                    <span class="qty-value">1</span>
+                    <button
+                      type="button"
+                      class="qty-btn"
+                      data-action="increase"
+                      data-product="raincoat"
+                    >+</button>
+                  </div>
+                </div>
+
+                <div class="product-item" data-id="jacket" data-price="3200">
+                  <label class="product-checkbox">
+                    <input type="checkbox" class="product-select" checked />
+                    <div class="product-preview">
+                      <img
+                        src="https://res.cloudinary.com/dhptequpx/image/upload/v1777445699/chat_images/file_1777445698351_cdpo7sn97.png"
+                        alt="Men's waterproof rain jacket"
+                      />
+                      <div class="product-meta">
+                        <strong>Men's waterproof rain jacket</strong>
+                        <div class="color-wrap">
+                        <select id="jacketColor" class="color-select">
+                          <option value="black">কালো</option>
+                          <option value="navy">নেভি ব্লু</option>
+                        </select>
+                      </div>
+                      </div>
+                    </div>
+                  </label>
+                  <div class="product-price">3200৳</div>
+                  <div class="quantity-control">
+                    <button
+                      type="button"
+                      class="qty-btn"
+                      data-action="decrease"
+                      data-product="jacket"
+                    >-</button>
+                    <span class="qty-value">1</span>
+                    <button
+                      type="button"
+                      class="qty-btn"
+                      data-action="increase"
+                      data-product="jacket"
+                    >+</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="panel-section coupon-section">
+              <h3>৪. কুপন কোড</h3>
+              <div class="coupon-row">
+                <input
+                  type="text"
+                  id="coupon"
+                  placeholder="Enter coupon code"
+                />
+                <button type="button" id="applyCoupon" class="btn-secondary">
+                  প্রয়োগ
+                </button>
+              </div>
+              <p class="coupon-help">কুপন ব্যবহার করলে অতিরিক্ত ছাড় পেতে পারেন।</p>
+            </div>
+
+            <aside class="summary-card">
+              <h3>অর্ডার সামারি</h3>
+              <div class="summary-row">
+                <span>Subtotal</span>
+                <span id="subtotal">0৳</span>
+              </div>
+              <div class="summary-row">
+                <span>Shipping Charge</span>
+                <span id="shippingCharge">70৳</span>
+              </div>
+              <div class="summary-row total">
+                <strong>Total Amount</strong>
+                <strong id="totalAmount">70৳</strong>
+              </div>
+              <p class="summary-note">
+                প্রোডাক্ট, পরিমাণ এবং শিপিং অপশনের উপর ভিত্তি করে মোট টোটাল
+                ডাইনামিক আপডেট হবে। একসাথে ২ বা তার বেশি কোয়ান্টিটি হলে
+                ডেলিভারি চার্জ ফ্রি হবে।
+              </p>
+            </aside>
+
+            <button type="button" id="placeOrder" class="btn-primary place-order">
+              Place Order
+            </button>
+            <div id="confirmation" class="confirmation">
+              <i class="fa-solid fa-circle-check"></i>
+              <div>
+                <strong>অর্ডার কনফার্ম হয়েছে!</strong>
+                <p>আমরা শীঘ্রই আপনার ফোনে যোগাযোগ করবো।</p>
+              </div>
+            </div>
+          </form>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="footer page" id="contact">
+      <div class="footer-grid">
+        <div>
+          <h3>Buy Different</h3>
+          <p>Premium Rain Protection | দ্রুত ডেলিভারি এবং বিশ্বস্ত সার্ভিস। সেরা কোয়ালিটি, সাশ্রয়ী মূল্য এবং আপনার আস্থার ঠিকানা।</p>
+        </div>
+        <div>
+          <p><strong><i class="fa-solid fa-phone"></i> Contact Number:</strong> <a href="tel:01403230530">01403230530</a></p>
+          <p><strong><i class="fa-solid fa-envelope"></i> Email Address:</strong> <a href="mailto:tahmidd45@gmail.com">tahmidd45@gmail.com</a></p>
+          <p> <strong><i class="fa-solid fa-map-marker-alt"></i> Business Address:</strong> 1no Hazi Badsa Mia Road, Matuail, Demra, Dhaka</p>
+        </div>
+      </div>
+<p class="footer-copy">
+  © 2026 Buy Different — All Rights Reserved. Designed & Developed by
+  <strong>
+    <a href="https://wa.me/8801915647290" target="_blank">
+      MD Mutasim Billah Saad
+    </a>
+  </strong>
+</p>
+    </footer>
+
+    <a
+      class="whatsapp-float"
+      href="https://wa.me/8801915647290"
+      target="_blank"
+      aria-label="WhatsApp অ্যাপ খুলুন"
+    >
+      <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <script>
+      const productItems = document.querySelectorAll('.product-item');
+      const shippingRadios = document.querySelectorAll('input[name="shipping"]');
+      const couponInput = document.getElementById('coupon');
+      const applyCouponBtn = document.getElementById('applyCoupon');
+      const subtotalEl = document.getElementById('subtotal');
+      const shippingChargeEl = document.getElementById('shippingCharge');
+      const totalAmountEl = document.getElementById('totalAmount');
+      const confirmation = document.getElementById('confirmation');
+      const placeOrderBtn = document.getElementById('placeOrder');
+      const couponHelp = document.querySelector('.coupon-help');
+
+      let couponDiscount = 0;
+      let couponCode = '';
+
+      function getShippingCharge() {
+        return Number(document.querySelector('input[name="shipping"]:checked').value);
+      }
+
+      function updateSummary() {
+        let subtotal = 0;
+
+        productItems.forEach((item) => {
+          const checkbox = item.querySelector('.product-select');
+          const qty = Number(item.querySelector('.qty-value').textContent) || 0;
+          const price = Number(item.dataset.price);
+
+          if (checkbox.checked && qty > 0) {
+            subtotal += price * qty;
+          }
+        });
+
+        const totalQty = [...productItems].reduce((sum, item) => {
+          const checkbox = item.querySelector('.product-select');
+          const qty = Number(item.querySelector('.qty-value').textContent) || 0;
+          return checkbox.checked ? sum + qty : sum;
+        }, 0);
+
+        const shippingCharge = subtotal > 0 && totalQty < 2 ? getShippingCharge() : 0;
+
+        couponDiscount = 0;
+        if (couponCode === 'SAVE100') {
+          couponDiscount = 100;
+        } else if (couponCode === 'SAVE200') {
+          couponDiscount = 200;
+        } else if (couponCode === 'RAIN5') {
+          couponDiscount = Math.round(subtotal * 0.05);
+        } else if (couponCode === 'STO10') {
+          couponDiscount = Math.round(subtotal * 0.10);
+        }
+
+        let total = subtotal + shippingCharge - couponDiscount;
+        if (total < 0) total = 0;
+
+        subtotalEl.textContent = subtotal.toLocaleString('bn-BD') + '৳';
+        shippingChargeEl.textContent = shippingCharge.toLocaleString('bn-BD') + '৳';
+        totalAmountEl.textContent = total.toLocaleString('bn-BD') + '৳';
+      }
+
+      productItems.forEach((item) => {
+        item.querySelector('.product-select').addEventListener('change', updateSummary);
+      });
+
+      document.querySelectorAll('.qty-btn').forEach((button) => {
+        button.addEventListener('click', () => {
+          const action = button.dataset.action;
+          const productId = button.dataset.product;
+          const item = document.querySelector(`.product-item[data-id="${productId}"]`);
+          const qtyEl = item.querySelector('.qty-value');
+          let qty = Number(qtyEl.textContent);
+
+          if (action === 'increase') qty += 1;
+          if (action === 'decrease' && qty > 1) qty -= 1;
+
+          qtyEl.textContent = qty;
+          updateSummary();
+        });
+      });
+
+      shippingRadios.forEach((radio) => radio.addEventListener('change', updateSummary));
+
+      applyCouponBtn.addEventListener('click', () => {
+        const code = couponInput.value.trim().toUpperCase();
+
+        if (!code) {
+          couponCode = '';
+          couponHelp.textContent = 'কুপন না থাকলে ফাঁকা রেখে দিন।';
+          updateSummary();
+          return;
+        }
+
+        couponCode = code;
+
+        if (code === 'SAVE100') {
+          couponHelp.textContent = 'কুপন প্রয়োগ হয়েছে: ১০০৳ ডিসকাউন্ট।';
+        } else if (code === 'SAVE200') {
+          couponHelp.textContent = 'কুপন প্রয়োগ হয়েছে: ২০০৳ ডিসকাউন্ট।';
+        } else if (code === 'RAIN5') {
+          couponHelp.textContent = 'কুপন প্রয়োগ হয়েছে: ৫% ডিসকাউন্ট।';
+        } else if (code === 'STO10') {
+          couponHelp.textContent = 'কুপন প্রয়োগ হয়েছে: ১০% ডিসকাউন্ট।';
+        } else {
+          couponCode = '';
+          couponHelp.textContent = 'বৈধ কুপন কোড নয়।';
+        }
+
+        updateSummary();
+      });
+
+      function validateOrder() {
+        const name = document.getElementById('customerName').value.trim();
+        const phone = document.getElementById('customerPhone').value.trim();
+        const address = document.getElementById('customerAddress').value.trim();
+        const selectedProducts = [...productItems].filter((item) =>
+          item.querySelector('.product-select').checked,
+        );
+
+        if (!name || !phone || !address) {
+          alert('নাম, ফোন এবং ঠিকানা অবশ্যই পূরণ করুন।');
+          return false;
+        }
+
+        if (!/^\d{11}$/.test(phone)) {
+          alert('সঠিক ১১ সংখ্যার ফোন নম্বর দিন।');
+          return false;
+        }
+
+        if (selectedProducts.length === 0) {
+          alert('কমপক্ষে একটি পণ্য নির্বাচন করুন।');
+          return false;
+        }
+
+        return true;
+      }
+
+      function getSelectedItemsText() {
+        const lines = [];
+
+        productItems.forEach((item) => {
+          const checkbox = item.querySelector('.product-select');
+          if (!checkbox.checked) return;
+
+          const title = item.querySelector('.product-meta strong').textContent.trim();
+          const qty = Number(item.querySelector('.qty-value').textContent) || 0;
+          const colorSelect = item.querySelector('.color-select');
+          const color = colorSelect ? colorSelect.options[colorSelect.selectedIndex].text : 'N/A';
+          const price = Number(item.dataset.price);
+          const total = price * qty;
+
+          lines.push(`${title} — ${color} — পরিমাণ: ${qty} — ${total.toLocaleString('bn-BD')}৳`);
+        });
+
+        return lines.join('\n');
+      }
+
+      function getShippingText() {
+        const value = getShippingCharge();
+        return value === 70 ? 'ঢাকার ভিতরে' : 'ঢাকার বাইরে';
+      }
+
+      function buildWhatsAppMessage() {
+        const name = document.getElementById('customerName').value.trim();
+        const phone = document.getElementById('customerPhone').value.trim();
+        const address = document.getElementById('customerAddress').value.trim();
+        const note = document.getElementById('customerNote').value.trim();
+        const coupon = couponInput.value.trim();
+        const productText = getSelectedItemsText();
+        const shippingCharge = shippingChargeEl.textContent;
+        const subtotal = subtotalEl.textContent;
+        const total = totalAmountEl.textContent;
+
+        const lines = [
+          '🛒 Buy Different - নতুন অর্ডার',
+          '',
+          `👤 গ্রাহকের নাম: ${name}`,
+          `📱 ফোন নম্বর: ${phone}`,
+          `📍 ঠিকানা: ${address}`,
+          '',
+          '📦 অর্ডারকৃত পণ্য:',
+          ...productText.split('\n').map((line) => `    - ${line}`),
+          '',
+          `💰 Subtotal: ${subtotal}`,
+          `🚚 Delivery Charge: ${shippingCharge}`,
+          `💵 Total Amount: ${total}`,
+        ];
+
+        if (coupon) lines.push(`🎟️ কুপন কোড: ${coupon}`);
+        if (note) lines.push(`📝 নোট: ${note}`);
+
+        lines.push('', '👉 অনুগ্রহ করে অর্ডারটি কনফার্ম করুন।');
+
+        return encodeURIComponent(lines.join('\n'));
+      }
+
+      placeOrderBtn.addEventListener('click', () => {
+        if (!validateOrder()) return;
+
+        const whatsappMessage = buildWhatsAppMessage();
+        const whatsappUrl = `https://wa.me/8801915647290?text=${whatsappMessage}`;
+        window.open(whatsappUrl, '_blank');
+      });
+
+      updateSummary();
+    </script>
+  </body>
+</html>
